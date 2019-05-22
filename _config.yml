@@ -35,14 +35,7 @@ analytics:
   account:
   domain:
 
-# twitter buttons
-twitter:
-  enabled: true
-  via: MCPlayNetwork wiki
-  hash: #MCPlayNetwork
-  account: MCPlayNetwork
-
-exclude: ['README.md', 'LICENSE', 'bower.json', 'Gemfile.lock', 'Gemfile', 'hidden.html', 'index.backup.html', 'changelog.html', 'favicon_.png']
+exclude: ['README.md', 'LICENSE', 'bower.json', 'Gemfile.lock', 'Gemfile']
 
 gems:
   - jekyll-mentions
