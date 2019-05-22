@@ -1,0 +1,51 @@
+id: GravittoGroup/docs.mcplay.biz
+name: MCPlayNetwork wiki
+favicon: png
+
+play:
+  url: https://wiki.mcplay.biz/InGameGuideline.html
+  forum:
+    url: https://community.mcplay.biz/
+
+# set this to true to replace the generated header navbar by _includes/navbar.html
+customNavBar: true
+
+# list of additional links on the right of the top menu
+headerLinks:
+  - title: 公式ウェブサイト
+    url: https://www.mcplay.biz/
+  - title: コミュニティフォーラム
+    url: https://community.mcplay.biz/
+
+# list if additional links on the footer
+footerLinks:
+  - title: 公式ウェブサイト
+    url: https://www.mcplay.biz/
+  - title: コミュニティフォーラム
+    url: https://community.mcplay.biz/
+
+# header
+header:
+  color1: "#080331"
+  color2: "##080331"
+  trianglify: true
+
+# google analytics
+analytics:
+  account:
+  domain:
+
+# twitter buttons
+twitter:
+  enabled: true
+  via: MCPlayNetwork wiki
+  hash: #MCPlayNetwork
+  account: MCPlayNetwork
+
+exclude: ['README.md', 'LICENSE', 'bower.json', 'Gemfile.lock', 'Gemfile', 'hidden.html', 'index.backup.html', 'changelog.html', 'favicon_.png']
+
+gems:
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
