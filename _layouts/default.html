@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
   <title>{{site.name}}</title>
 
   {% if site.favicon %}
-  <link rel="icon" type="{% if site.favicon == 'png' %}image/png{% else %}image/x-icon{% endif %}" href="{{site.github.url}}/favicon.{{site.favicon}}"/>
+  <link rel="icon" type="{% if site.favicon == 'png' %}image/png{% else %}image/x-icon{% endif %}"
+    href="{{site.github.url}}/favicon.{{site.favicon}}" />
   {% endif %}
 
   <!--[if lt IE 9]>
@@ -21,8 +23,27 @@
 
   <style>
     #content {
-      background:{{site.header.color1}};
-      background:linear-gradient(135deg, {{site.header.color1}}, {{site.header.color2}});
+      background: {
+          {
+          site.header.color1
+        }
+      }
+
+      ;
+
+      background:linear-gradient(135deg, {
+          {
+          site.header.color1
+        }
+      }
+
+      , {
+          {
+          site.header.color2
+        }
+      }
+
+      );
     }
   </style>
 
@@ -49,18 +70,18 @@
       </div>
       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav">
-        {% if site.customNavBar %}
+          {% if site.customNavBar %}
           {% include navbar.html %}
-        {% else %}
+          {% else %}
           {% assign sorted_pages = site.pages | sort:"name" %}
           {% for p in sorted_pages %}
-            {% if p.isHome != true and p.hide != true and p.title != '' %}
-            <li {% if page.title == p.title %}class="active"{% endif %}>
-              <a href="{{site.github.url}}{{p.url}}">{{p.title}}</a>
-            </li>
-            {% endif %}
+          {% if p.isHome != true and p.hide != true and p.title != '' %}
+          <li {% if page.title == p.title %}class="active" {% endif %}>
+            <a href="{{site.github.url}}{{p.url}}">{{p.title}}</a>
+          </li>
+          {% endif %}
           {% endfor %}
-        {% endif %}
+          {% endif %}
         </ul>
         <ul class="nav navbar-nav navbar-right">
           {% for p in site.headerLinks %}
@@ -128,16 +149,19 @@
     <div class="container">
       <div class="bs-docs-social">
         <ul class="bs-docs-social-buttons">
-        {% if site.twitter.enabled %}
+          {% if site.twitter.enabled %}
           <li>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{site.github.url}}" data-count="horizontal" data-via="{{site.twitter.via}}" data-text="{{site.name}}" data-hashtags="{{site.twitter.hash}}">Tweet</a>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{site.github.url}}"
+              data-count="horizontal" data-via="{{site.twitter.via}}" data-text="{{site.name}}"
+              data-hashtags="{{site.twitter.hash}}">Tweet</a>
           </li>
-        {% endif %}
-        {% if site.twitter.account %}
+          {% endif %}
+          {% if site.twitter.account %}
           <li>
-            <a href="https://twitter.com/{{site.twitter.account}}" class="twitter-follow-button" data-show-count="true">Follow @{{site.twitter.account}}</a>
+            <a href="https://twitter.com/{{site.twitter.account}}" class="twitter-follow-button"
+              data-show-count="true">Follow @{{site.twitter.account}}</a>
           </li>
-        {% endif %}
+          {% endif %}
         </ul>
       </div>
 
@@ -146,10 +170,10 @@
       </p>
 
       <ul class="bs-docs-footer-links muted">
-      {% for l in site.footerLinks %}
+        {% for l in site.footerLinks %}
         <li>&middot;</li>
         <li><a href="{{l.url}}">{{l.title}}</a></li>
-      {% endfor %}
+        {% endfor %}
       </ul>
     </div>
   </footer>
@@ -164,25 +188,28 @@
 
   {% if site.twitter.enabled or site.twitter.account %}
   <script>
-    window.twttr = (function (d,s,id) {
+    window.twttr = (function (d, s, id) {
       var t, js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
-      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
-      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+      if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.async = 1;
+      js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
     }(document, "script", "twitter-wjs"));
   </script>
   {% endif %}
 
   {% if site.analytics.account and site.analytics.domain %}
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', '{{site.analytics.account}}', '{{site.analytics.domain}}');
     ga('send', 'pageview');
   </script>
   {% endif %}
 
 </body>
+
 </html>
