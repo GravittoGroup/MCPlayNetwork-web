@@ -13,6 +13,14 @@ social:
 nav:
   - title: トップページ
     url: /
+  - title: ガイドライン
+    dropdown:
+      - title: ゲーム内ガイドライン
+        url: /InGameGuideline.html
+      - title: コミュニティガイドライン
+        url: /CommunityGuideline.html
+      - title: 異議申し立て
+        url: /AppealPunishment.html
   - title: サーバー
     dropdown:
       - title: Hub
