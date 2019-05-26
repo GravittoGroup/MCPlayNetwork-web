@@ -1,44 +1,25 @@
-id: GravittoGroup/docs.mcplay.biz
 name: MCPlayNetwork wiki
-favicon: png
+baseurl: ""
+url: ""
+# Build settings
+markdown: kramdown
 
-play:
-  url: https://wiki.mcplay.biz/InGameGuideline.html
-  forum:
-    url: https://community.mcplay.biz/
+social:
+  Website: https://www.mcplay.biz
+  Twitter: https://twitter.com/MCPlayNetwork
+  YouTube: https://www.youtube.com/channel/UCCw30ZfwDq_czxcTofr_4LA
+  GitHub: https://github.com/GravittoGroup/MCPlayNetwork-wiki/
 
-# set this to true to replace the generated header navbar by _includes/navbar.html
-customNavBar: true
-
-# list of additional links on the right of the top menu
-headerLinks:
-  - title: 公式ウェブサイト
-    url: https://www.mcplay.biz/
-  - title: コミュニティフォーラム
-    url: https://community.mcplay.biz/
-
-# list if additional links on the footer
-footerLinks:
-  - title: 公式ウェブサイト
-    url: https://www.mcplay.biz/
-  - title: コミュニティフォーラム
-    url: https://community.mcplay.biz/
-
-# header
-header:
-  color1: "#080331"
-  color2: "##080331"
-  trianglify: true
-
-# google analytics
-analytics:
-  account:
-  domain:
-
-exclude: ['README.md', 'LICENSE', 'bower.json', 'Gemfile.lock', 'Gemfile']
-
-gems:
-  - jekyll-mentions
-  - jemoji
-  - jekyll-redirect-from
-  - jekyll-sitemap
+nav:
+  - title: Home
+    url: /
+  - title: item 1
+    dropdown:
+      - title: item 1
+        url: /#
+      - title: item 2
+        url: /#
+      - title: item 3
+        url: /#
+      - title: item 4
+        url: /#

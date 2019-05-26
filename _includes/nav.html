@@ -1,0 +1,50 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+  <a class="navbar-brand" href="{{site.social.Website}}" target="_blank">{{site.name}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Left -->
+    <ul class="navbar-nav mr-auto">
+      {% for item in site.nav %}
+      {% if item.dropdown %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">{{ item.title }}</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          {% for dropdownitem in item.dropdown %}
+          <a class="dropdown-item" href="{{ dropdownitem.url }}">{{ dropdownitem.title }}</a>
+          {% endfor %}
+        </div>
+      </li>
+      {% else %}
+      <li class="nav-item {% if page.title == item.title %}active{% endif %}">
+        <a class="nav-link" href="{{ item.url }}">{{ item.title }}{% if page.title == item.title %}<span
+            class="sr-only">(current)</span>{% endif %}
+        </a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    <!-- Right -->
+    <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item">
+        <a href="{{site.social.Website}}" class="nav-link waves-effect" target="_blank">
+          <i class="fas fa-home"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{site.social.Twitter}}" class="nav-link waves-effect" target="_blank">
+          <i class="fas fa-users"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="{{site.social.GitHub}}" class="nav-link border border-light rounded waves-effect"
+          target="_blank">
+          <i class="fab fa-github mr-2"></i>GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
