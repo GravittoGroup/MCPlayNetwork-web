@@ -13,15 +13,12 @@ SurvivalはバニラのMInecraftを基盤に、様々なプレイヤーが楽し
 Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCPlayNetworkに接続後Hubから接続が可能です。  
 
 # Survivalに関する解説ページ
-- [QuickShop]({{site.github.url}}/servers/survival/quickshop)  
-- [Shop]({{site.github.url}}/servers/survival/shop)  
-- [mcMMO]({{site.github.url}}/servers/survival/mcMMO/)  
 
 <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
   <div class="col-lg-4 col-md-12 mb-4">
     <div class="card">
       <div class="view overlay">
-        <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+        <img class="card-img-top" src="{{site.github.url}}/assets/img/QuickShop.png"
           alt="Card image cap">
         <a href="{{site.github.url}}/servers/survival/quickshop">
           <div class="mask rgba-white-slight"></div>
@@ -37,7 +34,7 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
   <div class="col-lg-4 col-md-12 mb-4">
     <div class="card">
       <div class="view overlay">
-        <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+        <img class="card-img-top" src="{{site.github.url}}/assets/img/shop.png"
           alt="Card image cap">
         <a href="{{site.github.url}}/servers/survival/shop">
           <div class="mask rgba-white-slight"></div>
@@ -53,7 +50,7 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
   <div class="col-lg-4 col-md-12 mb-4">
     <div class="card">
       <div class="view overlay">
-        <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+        <img class="card-img-top" src="{{site.github.url}}/assets/img/mcMMO.png"
           alt="Card image cap">
         <a href="{{site.github.url}}/servers/survival/mcMMO/">
           <div class="mask rgba-white-slight"></div>
@@ -71,7 +68,7 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
   <div class="col-lg-4 col-md-12 mb-4">
     <div class="card">
       <div class="view overlay">
-        <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+        <img class="card-img-top" src="{{site.github.url}}/assets/img/GriefPrevention.png"
           alt="Card image cap">
         <a href="{{site.github.url}}/servers/survival/GriefPrevention">
           <div class="mask rgba-white-slight"></div>
