@@ -11,15 +11,22 @@ social:
   GitHub: https://github.com/GravittoGroup/MCPlayNetwork-wiki/
 
 nav:
-  - title: Home
+  - title: トップページ
     url: /
-  - title: item 1
+  - title: サーバー
     dropdown:
-      - title: item 1
-        url: /#
-      - title: item 2
-        url: /#
-      - title: item 3
-        url: /#
-      - title: item 4
-        url: /#
+      - title: Hub
+        url: /servers/hub/
+      - title: Survival
+        url: /servers/survival/
+      - title: Creative
+        url: /servers/creative/
+      - title: VillageDefense
+        url: /servers/villagedefense/
+      - title: AncientRPG
+        url: /servers/ancientrpg/
+      - title: Prison
+        url: /servers/prison/
+      - title: AgarioMC
+        url: /servers/agariomc/
+
