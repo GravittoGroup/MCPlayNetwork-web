@@ -19,7 +19,7 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
     <div class="card">
       <div class="view overlay">
         <img class="card-img-top" src="{{site.github.url}}/assets/img/QuickShop.png"
-          alt="Card image cap">
+          alt="QuickShop">
         <a href="{{site.github.url}}/servers/survival/quickshop">
           <div class="mask rgba-white-slight"></div>
         </a>
@@ -35,7 +35,7 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
     <div class="card">
       <div class="view overlay">
         <img class="card-img-top" src="{{site.github.url}}/assets/img/shop.png"
-          alt="Card image cap">
+          alt="Shop">
         <a href="{{site.github.url}}/servers/survival/shop">
           <div class="mask rgba-white-slight"></div>
         </a>
@@ -51,7 +51,7 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
     <div class="card">
       <div class="view overlay">
         <img class="card-img-top" src="{{site.github.url}}/assets/img/mcMMO.png"
-          alt="Card image cap">
+          alt="mcMMO">
         <a href="{{site.github.url}}/servers/survival/mcMMO/">
           <div class="mask rgba-white-slight"></div>
         </a>
@@ -69,7 +69,7 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
     <div class="card">
       <div class="view overlay">
         <img class="card-img-top" src="{{site.github.url}}/assets/img/GriefPrevention.png"
-          alt="Card image cap">
+          alt="GriefPrevention">
         <a href="{{site.github.url}}/servers/survival/GriefPrevention">
           <div class="mask rgba-white-slight"></div>
         </a>
