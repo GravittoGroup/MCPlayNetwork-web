@@ -34,7 +34,7 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
   <div class="col-lg-4 col-md-12 mb-4">
     <div class="card">
       <div class="view overlay">
-        <img class="card-img-top" src="{{site.github.url}}/assets/img/shop.png"
+        <img class="card-img-top" src="{{site.github.url}}/assets/img/Shop.png"
           alt="Shop">
         <a href="{{site.github.url}}/servers/survival/shop">
           <div class="mask rgba-white-slight"></div>
