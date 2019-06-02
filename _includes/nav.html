@@ -19,7 +19,7 @@
         </div>
       </li>
       {% else %}
-      <li class="nav-item {% if page.title == item.title %}active{% endif %}">
+      <li class="nav-item">
         <a class="nav-link" href="{{ item.url }}">{{ item.title }}{% if page.title == item.title %}<span
             class="sr-only">(current)</span>{% endif %}
         </a>
@@ -29,6 +29,11 @@
     </ul>
     <!-- Right -->
     <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item {% if page.title == Discord %}active{% endif %}">
+        <a href="{{site.github.url}}/discord/" class="nav-link waves-effect">
+          <i class="fab fa-discord"></i>Discord
+        </a>
+      </li>
       <li class="nav-item">
         <a href="{{site.social.Website}}" class="nav-link waves-effect" target="_blank">
           <i class="fas fa-home"></i>
