@@ -20,14 +20,14 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
       <div class="view overlay">
         <img class="card-img-top" src="{{site.github.url}}/assets/img/QuickShop.png"
           alt="QuickShop">
-        <a href="{{site.github.url}}/servers/survival/quickshop">
+        <a href="{{site.github.url}}/servers/Survival/quickshop">
           <div class="mask rgba-white-slight"></div>
         </a>
       </div>
       <div class="card-body">
         <h4 class="card-title">QuickShop</h4>
         <p class="card-text">ユーザー間でアイテムを取引するためのショップを作成できます。</p>
-        <a href="{{site.github.url}}/servers/survival/quickshop" class="btn btn-primary">解説</a>
+        <a href="{{site.github.url}}/servers/Survival/quickshop" class="btn btn-primary">解説</a>
       </div>
     </div>
   </div>
@@ -36,14 +36,14 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
       <div class="view overlay">
         <img class="card-img-top" src="{{site.github.url}}/assets/img/Shop.png"
           alt="Shop">
-        <a href="{{site.github.url}}/servers/survival/shop">
+        <a href="{{site.github.url}}/servers/Survival/shop">
           <div class="mask rgba-white-slight"></div>
         </a>
       </div>
       <div class="card-body">
         <h4 class="card-title">Shop</h4>
         <p class="card-text"><b>非推奨：</b>ユーザー間でアイテムを取引するためのショップを作成できます。</p>
-        <a href="{{site.github.url}}/servers/survival/shop" class="btn btn-primary">解説</a>
+        <a href="{{site.github.url}}/servers/Survival/shop" class="btn btn-primary">解説</a>
       </div>
     </div>
   </div>
@@ -52,14 +52,14 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
       <div class="view overlay">
         <img class="card-img-top" src="{{site.github.url}}/assets/img/mcMMO.png"
           alt="mcMMO">
-        <a href="{{site.github.url}}/servers/survival/mcMMO/">
+        <a href="{{site.github.url}}/servers/Survival/mcMMO/">
           <div class="mask rgba-white-slight"></div>
         </a>
       </div>
       <div class="card-body">
         <h4 class="card-title">mcMMO</h4>
         <p class="card-text">プレイヤーにスキルとアビリティが追加されます。</p>
-        <a href="{{site.github.url}}/servers/survival/mcMMO/" class="btn btn-primary">解説</a>
+        <a href="{{site.github.url}}/servers/Survival/mcMMO/" class="btn btn-primary">解説</a>
       </div>
     </div>
   </div>
@@ -70,14 +70,14 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
       <div class="view overlay">
         <img class="card-img-top" src="{{site.github.url}}/assets/img/GriefPrevention.png"
           alt="GriefPrevention">
-        <a href="{{site.github.url}}/servers/survival/griefprevention">
+        <a href="{{site.github.url}}/servers/Survival/griefprevention">
           <div class="mask rgba-white-slight"></div>
         </a>
       </div>
       <div class="card-body">
         <h4 class="card-title">GriefPrevention</h4>
         <p class="card-text">指定範囲を保護し、他のプレイヤーから守ります。</p>
-        <a href="{{site.github.url}}/servers/survival/griefprevention" class="btn btn-primary">解説</a>
+        <a href="{{site.github.url}}/servers/Survival/griefprevention" class="btn btn-primary">解説</a>
       </div>
     </div>
   </div>

@@ -24,17 +24,13 @@ nav:
   - title: サーバー
     dropdown:
       - title: Hub
-        url: /servers/hub/
+        url: /servers/Hub/
       - title: Survival
-        url: /servers/survival/
+        url: /servers/Survival/
       - title: Creative
-        url: /servers/creative/
+        url: /servers/Creative/
       - title: VillageDefense
-        url: /servers/villagedefense/
+        url: /servers/VillageDefense/
       - title: AncientRPG
-        url: /servers/ancientrpg/
-      - title: Prison
-        url: /servers/prison/
-      - title: AgarioMC
-        url: /servers/agariomc/
+        url: /servers/AncientRPG/
 
