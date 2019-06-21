@@ -10,7 +10,12 @@ VillageDefenseではウェーブごとに攻めくる敵から村人を守るの
 
 ## 接続方法
 
-VillageDefenseに接続するためにはHubに接続後、VillageDefenseと書かれている村人をクリックして下さい。
+MCPlayNetworkに接続後Hubから接続が可能です。
+
+## ゲームへの参加方法
+
+サーバーに参加後眼の前にあるポータルに飛び込むことでゲームへの参加が可能です。  
+<img src="{{site.github.url}}/assets/img/VillageDefense/portal.png" class="img-fluid">
 
 # VillageDefenseに関する解説ページ
 
