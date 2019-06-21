@@ -70,14 +70,14 @@ Survivalに接続するためには`survival.mcplay.biz`を利用するか、MCP
       <div class="view overlay">
         <img class="card-img-top" src="{{site.github.url}}/assets/img/GriefPrevention.png"
           alt="GriefPrevention">
-        <a href="{{site.github.url}}/servers/survival/GriefPrevention">
+        <a href="{{site.github.url}}/servers/survival/griefprevention">
           <div class="mask rgba-white-slight"></div>
         </a>
       </div>
       <div class="card-body">
         <h4 class="card-title">GriefPrevention</h4>
-        <p class="card-text">プレイヤーにスキルとアビリティが追加されます。</p>
-        <a href="{{site.github.url}}/servers/survival/GriefPrevention" class="btn btn-primary">解説</a>
+        <p class="card-text">指定範囲を保護し、他のプレイヤーから守ります。</p>
+        <a href="{{site.github.url}}/servers/survival/griefprevention" class="btn btn-primary">解説</a>
       </div>
     </div>
   </div>
