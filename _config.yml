@@ -31,6 +31,8 @@ nav:
         url: /servers/Creative/
       - title: VillageDefense
         url: /servers/VillageDefense/
+      - title: MissileWars
+        url: /servers/MissileWars/
       - title: AncientRPG
         url: /servers/AncientRPG/
 
