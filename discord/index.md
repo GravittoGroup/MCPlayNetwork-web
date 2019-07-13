@@ -14,7 +14,7 @@ Discordサーバーでは、ウェブサイト、コミュニティフォーラ�
 参加にはDiscordのアカウントが必要になります。  
 Discordのアカウントを既にお持ちの方は下記のURLからサーバーに参加することが可能です。  
 
-[MCPlayNetwork Discord公式サーバー](https://discordapp.com/invite/2eTyNwU)
+[MCPlayNetwork Discord公式サーバー](https://discordapp.com/invite/KwbCWAM)
 
 ## 見れるチャンネルに制限がかかっている。
 
