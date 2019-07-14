@@ -2,6 +2,15 @@
 <html lang="ja">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134642969-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134642969-1');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +24,7 @@
 	<style>
 		.gradient {
 			background: linear-gradient(90deg, #09c 0, #33b5e5 100%);
-			"}
+		}
 	</style>
 </head>
 
@@ -35,8 +44,8 @@
 							href="https://community.mcplay.biz/"><i class="fas fa-users"></i> フォーラム</a>
 					</li>
 					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-white no-underline"
-							href="https://wiki.mcplay.biz/"><i class="fas fa-book"></i> Wiki</a>
+						<a class="inline-block py-2 px-4 text-white no-underline" href="https://wiki.mcplay.biz/"><i
+								class="fas fa-book"></i> Wiki</a>
 					</li>
 					<li class="mr-3">
 						<a class="inline-block py-2 px-4 text-white no-underline"
@@ -177,7 +186,7 @@
 					<p class="uppercase text-gray-500 md:mb-6">ルール</p>
 					<ul class="list-reset mb-6">
 						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://wiki.mcplay.biz/InGameGuideline.html"
+							<a href="https://www.mcplay.biz/InGameGuideline.html"
 								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
 									class="fas fa-bookmark"></i> ゲーム内ガイドライン</a>
 						</li>
@@ -185,6 +194,11 @@
 							<a href="https://wiki.mcplay.biz/CommunityGuideline.html"
 								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
 									class="fas fa-bookmark"></i> コミュニティガイドライン</a>
+						</li>
+						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
+							<a href="https://gravitto.tk/privacypolicy.html"
+								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
+									class="fas fa-lock"></i> プライバシーポリシー</a>
 						</li>
 					</ul>
 				</div>
@@ -237,5 +251,4 @@
 		var scrollpos = window.scrollY; var header = document.getElementById("header"); var navcontent = document.getElementById("nav-content"); var navaction = document.getElementById("navAction"); var brandname = document.getElementById("brandname"); var toToggle = document.querySelectorAll(".toggleColour"); document.addEventListener("scroll", function () { scrollpos = window.scrollY; if (scrollpos > 10) { header.classList.add("bg-white"); navaction.classList.remove("bg-white"); navaction.classList.add("gradient"); navaction.classList.remove("text-gray-800"); navaction.classList.add("text-white"); for (var a = 0; a < toToggle.length; a++) { toToggle[a].classList.add("text-gray-800"); toToggle[a].classList.remove("text-white") } header.classList.add("shadow"); navcontent.classList.remove("bg-gray-100"); navcontent.classList.add("bg-white") } else { header.classList.remove("bg-white"); navaction.classList.remove("gradient"); navaction.classList.add("bg-white"); navaction.classList.remove("text-white"); navaction.classList.add("text-gray-800"); for (var a = 0; a < toToggle.length; a++) { toToggle[a].classList.add("text-white"); toToggle[a].classList.remove("text-gray-800") } header.classList.remove("shadow"); navcontent.classList.remove("bg-white"); navcontent.classList.add("bg-gray-100") } });
 	</script>
 </body>
-
 </html>
