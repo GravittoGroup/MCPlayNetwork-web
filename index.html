@@ -24,7 +24,7 @@
 	<style>
 		.gradient {
 			background: linear-gradient(90deg, #09c 0, #33b5e5 100%);
-			"}
+		}
 	</style>
 </head>
 
@@ -44,8 +44,8 @@
 							href="https://community.mcplay.biz/"><i class="fas fa-users"></i> フォーラム</a>
 					</li>
 					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-white no-underline"
-							href="https://wiki.mcplay.biz/"><i class="fas fa-book"></i> Wiki</a>
+						<a class="inline-block py-2 px-4 text-white no-underline" href="https://wiki.mcplay.biz/"><i
+								class="fas fa-book"></i> Wiki</a>
 					</li>
 					<li class="mr-3">
 						<a class="inline-block py-2 px-4 text-white no-underline"
@@ -251,5 +251,4 @@
 		var scrollpos = window.scrollY; var header = document.getElementById("header"); var navcontent = document.getElementById("nav-content"); var navaction = document.getElementById("navAction"); var brandname = document.getElementById("brandname"); var toToggle = document.querySelectorAll(".toggleColour"); document.addEventListener("scroll", function () { scrollpos = window.scrollY; if (scrollpos > 10) { header.classList.add("bg-white"); navaction.classList.remove("bg-white"); navaction.classList.add("gradient"); navaction.classList.remove("text-gray-800"); navaction.classList.add("text-white"); for (var a = 0; a < toToggle.length; a++) { toToggle[a].classList.add("text-gray-800"); toToggle[a].classList.remove("text-white") } header.classList.add("shadow"); navcontent.classList.remove("bg-gray-100"); navcontent.classList.add("bg-white") } else { header.classList.remove("bg-white"); navaction.classList.remove("gradient"); navaction.classList.add("bg-white"); navaction.classList.remove("text-white"); navaction.classList.add("text-gray-800"); for (var a = 0; a < toToggle.length; a++) { toToggle[a].classList.add("text-white"); toToggle[a].classList.remove("text-gray-800") } header.classList.remove("shadow"); navcontent.classList.remove("bg-white"); navcontent.classList.add("bg-gray-100") } });
 	</script>
 </body>
-
 </html>
