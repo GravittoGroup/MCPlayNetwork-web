@@ -1,0 +1,6 @@
+site_name: MCPlay wiki
+theme:
+  name: 'material'
+  palette:
+    primary: 'Blue Grey'
+    accent: 'Blue Grey'
