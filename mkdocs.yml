@@ -13,3 +13,16 @@ extra:
     language: 'ja'
 markdown_extensions:
     - admonition
+nav:
+    - ホーム: index.md
+    - サーバー:
+      - サバイバル:
+        - 仕様: server/Survival/overview.md
+      - クリエイティブ:
+        - 仕様: server/Creative/overview.md
+    - パッチノート:
+        - パッチノートについて: patch/index.md
+        - Minecraft:
+          - 8.3.xパッチノート: patch/Minecraft/8.3.x.md
+        - Web:
+          - パッチノート: patch/Web/patchnote.md
