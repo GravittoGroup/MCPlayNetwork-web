@@ -6,6 +6,8 @@ theme:
   palette:
     primary: 'Blue Grey'
     accent: 'Blue Grey'
+  feature:
+    tabs: true
 extra:
   search:
     language: 'ja'
