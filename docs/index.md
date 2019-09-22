@@ -1,4 +1,4 @@
-# MCPlay Wikiへようこそ
+# Home
 ## MCPlayNetworkとは？
 
 MCPlayNetworkは2012年から運営が続けられている日本のMinecraftサーバーです。旧名称はSNAKENetworkなので略称として蛇鯖が使われたりします。  
