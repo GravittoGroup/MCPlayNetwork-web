@@ -11,3 +11,5 @@ theme:
 extra:
   search:
     language: 'ja'
+markdown_extensions:
+    - admonition
