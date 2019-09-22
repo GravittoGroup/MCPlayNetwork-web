@@ -7,7 +7,7 @@ Minecraftでサバイバルの要素が強いサーバーを中心に運営し�
 ## サーバー情報
 サーバーアドレス： `mcplay.biz`
 
-- Minecraft:Jaava Editon
+- Minecraft:Java Editon
 - バージョン 1.13.x - 1.14.x
 - サーバー所在地 日本
 
