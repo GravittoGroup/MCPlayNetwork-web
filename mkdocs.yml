@@ -1,7 +1,11 @@
 site_name: MCPlay wiki
 theme:
   name: 'material'
+  language: 'ja'
   custom_dir: 'custom'
   palette:
     primary: 'Blue Grey'
     accent: 'Blue Grey'
+extra:
+  search:
+    language: 'ja'
