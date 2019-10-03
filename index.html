@@ -97,6 +97,15 @@
 
 	<section class="bg-white border-b py-8">
 		<div class="container max-w-5xl mx-auto m-8">
+			<div role="alert">
+				<div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+					お知らせ
+				</div>
+				<div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+					<p>現在、サービスに問題が発生しております。この問題に関する詳細は<a href="https://forum.mcplay.biz/thread-272.html"><b>こちら</b></a>を御覧ください。
+					</p>
+				</div>
+			</div>
 			<div class="flex flex-wrap">
 				<div class="w-full sm:w-1/2 p-6">
 					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">フォーラム</h3>
@@ -251,4 +260,5 @@
 		var scrollpos = window.scrollY; var header = document.getElementById("header"); var navcontent = document.getElementById("nav-content"); var navaction = document.getElementById("navAction"); var brandname = document.getElementById("brandname"); var toToggle = document.querySelectorAll(".toggleColour"); document.addEventListener("scroll", function () { scrollpos = window.scrollY; if (scrollpos > 10) { header.classList.add("bg-white"); navaction.classList.remove("bg-white"); navaction.classList.add("gradient"); navaction.classList.remove("text-gray-800"); navaction.classList.add("text-white"); for (var a = 0; a < toToggle.length; a++) { toToggle[a].classList.add("text-gray-800"); toToggle[a].classList.remove("text-white") } header.classList.add("shadow"); navcontent.classList.remove("bg-gray-100"); navcontent.classList.add("bg-white") } else { header.classList.remove("bg-white"); navaction.classList.remove("gradient"); navaction.classList.add("bg-white"); navaction.classList.remove("text-white"); navaction.classList.add("text-gray-800"); for (var a = 0; a < toToggle.length; a++) { toToggle[a].classList.add("text-white"); toToggle[a].classList.remove("text-gray-800") } header.classList.remove("shadow"); navcontent.classList.remove("bg-white"); navcontent.classList.add("bg-gray-100") } });
 	</script>
 </body>
+
 </html>
