@@ -1,4 +1,8 @@
 # ウェブサイト
+## 2019/10/05
+* MCPlayDocs
+    - Deployed 6dc9129 with MkDocs version: 1.0.4
+
 ## 2019/10/02
 * MCPlayDocs
     - Deployed ff242da with MkDocs version: 1.0.4
