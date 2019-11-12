@@ -1,257 +1,136 @@
-<!DOCTYPE html>
-<html lang="ja">
-
+<!DOCTYPE HTML>
+<html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134642969-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/theme.css" />
+  <script src="./src/js/smoothscroll.js"></script>
+  <script src="./src/js/nav.js"></script>
 
-		gtag('config', 'UA-134642969-1');
-	</script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>MCPlayNetwork</title>
-	<meta name="description" content="MCPlayNetworkはMinecraft:JavaEditionで24時間いつでも接続できるマルチプレイサーバーです。">
-	<meta name="keywords" content="Minecraft,Java,MCPlayNetwork,マルチプレイ,サーバー,24時間,ミニゲーム">
-	<meta name="author" content="GravittoGroup">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-	<link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-	<script data-ad-client="ca-pub-8017032553209403" async
-		src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<style>
-		.gradient {
-			background: linear-gradient(90deg, #09c 0, #33b5e5 100%);
-		}
-	</style>
+  <title>MCPlayNetwork</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sid Engel">
+  <meta name="description" content="A friendly Minecraft server, with a relaxed vibe.">
+  <meta name="keywords" content="Minecraft, Server, Your ServerName, Multiplayer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="bg-grey-light leading-normal tracking-normal text-white gradient"
-	style="font-family: 'Source Sans Pro', sans-serif;">
-	<nav class="bg-gray-800 p-2 mt-0 fixed w-full z-10 top-0">
-		<div class="container mx-auto flex flex-wrap items-center">
-			<div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
-				<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-					<span class="text-2xl pl-2"> MCPlayNetwork</span>
-				</a>
-			</div>
-			<div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
-				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
-					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-white no-underline" target="__blank"
-							href="https://community.mcplay.biz/"><i class="fas fa-users"></i> フォーラム</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-white no-underline" href="https://wiki.mcplay.biz/"><i
-								class="fas fa-book"></i> Wiki</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-white no-underline"
-							href="https://wiki.mcplay.biz/discord/"><i class="fab fa-discord"></i> Discord</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-white no-underline"
-							href="https://twitter.com/MCPlayNetwork"><i class="fab fa-twitter"></i> Twitter</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+<body>
+  <div class="header" style="background: url('./src/img/background.png'); background-position: 50% 10%; background-attachment: fixed;">
+    <div class="navbar-fixed">
+      <nav class="z-depth-0">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">MCPlay</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">メニュー</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://forum.mcplay.biz/">Forum</a></li>
+            <li><a href="https://wiki.mcplay.biz/">Wiki</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="header-content center-align" data-aos="fade">
+      <h1 style="padding-top: 6%;">MCPlayNetwork</h1>
+      <h5>Minecraft:Java Editionで24時間いつでも接続できるマルチプレイサーバーです。</h5>
+      <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="https://forum.mcplay.biz/">コミュニティフォーラム</a>
+    </div>
+  </div>
 
-	<div class="pt-24">
-		<div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-			<div class="flex flex-col w-full justify-center items-start text-center md:text-left">
-				<h1 class="my-4 text-5xl font-bold leading-tight">ようこそ</h1>
-				<p class="leading-normal text-2xl mb-8">Minecraft:JavaEditionで24時間いつでも接続できるマルチプレイサーバーです。</p>
-				<a href="https://minecraft.jp/servers/mcplay.biz/vote"><img
-						src="https://minecraft.jp/servers/mcplay.biz/banner/1/560x95.png" /></a>
-			</div>
-		</div>
-	</div>
+  <div class="info center-align" data-aos="fade">
+    <div class="main">
+      <div class="row">
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/Plains_Grass_Block.png">
+          <h4>サバイバル</h4>
+          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;" href="https://wiki.mcplay.biz/server/Survival/">Wikiページ</a>
+        </div>
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/Block_of_Diamond.png">
+          <h4>クリエイティブ</h4>
+          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;" href="https://wiki.mcplay.biz/server/Creative/">Wikiページ</a>
+        </div>
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/tnt.png">
+          <h4>ミサイルウォーズ</h4>
+          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;" href="https://wiki.mcplay.biz/server/MissileWars/">Wikiページ</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<div class="relative -mt-12 lg:-mt-24">
-		<svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
-			xmlns:xlink="http://www.w3.org/1999/xlink">
-			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-				<g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
-					<path
-						d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-						opacity="0.100000001"></path>
-					<path
-						d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-						opacity="0.100000001"></path>
-					<path
-						d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-						id="Path-4" opacity="0.200000003"></path>
-				</g>
-				<g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
-					<path
-						d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
-					</path>
-				</g>
-			</g>
-		</svg>
-	</div>
+  <div class="about" id="about">
+    <div class="main">
+      <div class="row">
+        <div class="col s12 l5 align-center">
+          <img class="responsive-img" src="./src/img/loop.gif" data-aos="fade-right">
+        </div>
+        <div class="col s12 l7" data-aos="fade-left">
+          <h4>About</h4>
+          <p>過去7年間に渡り開発・運営が続けられているMinecraft:Java Editionのマルチプレイサーバーです。サバイバルを中心としたゲームモードに力が入れられており、バニラに近すぎず遠すぎないバランスで調整されています。</p>
+          <p>Minecraft 1.8.x - 1.14.x</p>
+          <a class="waves-effect waves-light btn-large grey darken-4" style="margin-top: 2%;" href="https://discord.gg/KwbCWAM">Discord</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<section class="bg-white border-b py-8">
-		<div class="container max-w-5xl mx-auto m-8">
-			<div class="flex flex-wrap">
-				<div class="w-full sm:w-1/2 p-6">
-					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">フォーラム</h3>
-					<p class="text-gray-600 mb-8">
-						MCPlayNetworkにはユーザー同士が交流できるコミュニティフォーラムがあります。フォーラムでは質問や情報共有など様々なことができます。<br /><br />
-						<a class="text-orange-500 underline" target="__blank" href="https://community.mcplay.biz/"><i
-								class="fas fa-users"></i> コミュニティフォーラム</a></p>
-				</div>
-				<div class="w-5/6 sm:w-1/2 p-6">
-					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">ゲーム内ルール</h3>
-					<p class="text-gray-600 mb-8">
-						MCPlayNetworkで遊ぶためには簡単なルールを確認して同意して頂く必要があります。サーバーに接続した時点で同意したとみなされます。<br /><br />
-						<a class="text-orange-500 underline" target="__blank"
-							href="https://www.mcplay.biz/InGameGuideline.html"><i class="fas fa-folder-open"></i>
-							ゲーム内ガイドライン</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
+  <div class="contact" id="contact" style="background: url('./src/img/background.png'); background-position: 50% 10%; background-attachment: fixed;">
+    <div class="main">
+      <div class="card-panel center-align" data-aos="fade-up">
+        <h4>Contact</h4>
+        <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;" href="https://gravitto.tk/contact.html">フォーム</a>
+      </div>
+    </div>
+  </div>
 
-	<section class="bg-white border-b py-8">
-		<div class="container max-w-5xl mx-auto m-8">
-			<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"><i
-					class="fas fa-server"></i> サーバー</h1>
-			<div class="w-full mb-4">
-				<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-			</div>
-			<div class="flex flex-wrap">
-				<div class="w-5/6 sm:w-1/2 p-6">
-					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Survival</h3>
-					<p class="text-gray-600 mb-8">
-						SurvivalはバニラのMInecraftを基盤に、様々なプレイヤーが楽しめるようにカスタマイズされています。その中でプレイヤーが各々自由に目標を持ってプレイすることができます。<br /><br />
-						<a class="text-orange-500 underline" target="__blank"
-							href="https://wiki.mcplay.biz/servers/Survival/"><i class="fas fa-book"></i> WIKIページへ</a>
-					</p>
-				</div>
-				<div class="w-full sm:w-1/2 p-6">
-					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Creative</h3>
-					<p class="text-gray-600 mb-8">
-						Creativeではプレイヤーは全員クリエイティブモードです。くプレイヤーは自由に42x42の土地を取得することができ、土地内で自由に建築をすることができます。<br /><br />
-						<a class="text-orange-500 underline" target="__blank"
-							href="https://wiki.mcplay.biz/servers/Creative/"><i class="fas fa-book"></i> WIKIページへ</a>
-					</p>
-				</div>
-			</div>
-			<div class="flex flex-wrap flex-col-reverse sm:flex-row">
-				<div class="w-full sm:w-1/2 p-6">
-					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">VillageDefense</h3>
-					<p class="text-gray-600 mb-8">
-						VillageDefenseではウェーブごとに攻めくる敵から村人を守るのが目的です。<br /><br />
-						<a class="text-orange-500 underline" target="__blank"
-							href="https://wiki.mcplay.biz/servers/VillageDefense/"><i class="fas fa-book"></i>
-							WIKIページへ</a></p>
-				</div>
-				<div class="w-full sm:w-1/2 p-6">
-					<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">MissileWars</h3>
-					<p class="text-gray-600 mb-8">
-						MIssileWarsではTNTミサイルを出現させて、敵陣地側の目標を破壊するのが目的です。<br /><br />
-						<a class="text-orange-500 underline" target="__blank"
-							href="https://wiki.mcplay.biz/servers/MissileWars/"><i class="fas fa-book"></i> WIKIページへ</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+  <footer class="page-footer grey darken-4 z-depth-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">MCPlayNetworkは<a href="https://gravitto.tk/">Gravitto</a>により運営されています。</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">リンク</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/MCPlayNetwork">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://forum.mcplay.biz/">コミュニティフォーラム</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://wiki.mcplay.biz/">Wiki</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4 z-depth-4">
+      <div class="container">
+        Created with care, by Sid Engel.
+        「Minecraft」は Mojang Synergies AB の商標です。 
+        <a class="grey-text text-lighten-4 right" href="https://gravitto.tk/">©Gravitto / MCPlay 2019</a>
+      </div>
+    </div>
+  </footer>
 
-	<footer class="bg-white">
-		<div class="container mx-auto  px-8">
-			<div class="w-full flex flex-col md:flex-row py-6">
-				<div class="flex-1">
-					<p class="uppercase text-gray-500 md:mb-6">リンク</p>
-					<ul class="list-reset mb-6">
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://community.mcplay.biz/"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fas fa-users"></i> コミュニティフォーラム</a>
-						</li>
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://wiki.mcplay.biz/"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fas fa-book"></i> MCPlayNetwork
-								Wiki</a>
-						</li>
-					</ul>
-				</div>
-				<div class="flex-1">
-					<p class="uppercase text-gray-500 md:mb-6">ルール</p>
-					<ul class="list-reset mb-6">
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://www.mcplay.biz/InGameGuideline.html"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fas fa-bookmark"></i> ゲーム内ガイドライン</a>
-						</li>
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://www.mcplay.biz/CommunityGuideline.html"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fas fa-bookmark"></i> コミュニティガイドライン</a>
-						</li>
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://gravitto.tk/privacypolicy.html"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fas fa-lock"></i> プライバシーポリシー</a>
-						</li>
-					</ul>
-				</div>
-				<div class="flex-1">
-					<p class="uppercase text-gray-500 md:mb-6">レポート</p>
-					<ul class="list-reset mb-6">
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://github.com/gravitto/MCPlayNetwork-issue/issues"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fas fa-bug"></i> バグ</a>
-						</li>
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://community.mcplay.biz/forum-12.html"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fas fa-folder-open"></i> ユーザー報告</a>
-						</li>
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://community.mcplay.biz/forum-16.html"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fas fa-folder-open"></i> 処罰異議申し立て</a>
-						</li>
-					</ul>
-				</div>
-				<div class="flex-1">
-					<p class="uppercase text-gray-500 md:mb-6">SNS</p>
-					<ul class="list-reset mb-6">
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://twitter.com/MCPlayNetwork"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fab fa-twitter"></i> Twitter</a>
-						</li>
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://github.com/gravitto/"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fab fa-github"></i> GitHub</a>
-						</li>
-						<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-							<a href="https://wiki.mcplay.biz/discord/"
-								class="no-underline hover:underline text-gray-800 hover:text-orange-500"><i
-									class="fab fa-discord"></i> Discord</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<p class="text-gray-700 text-center">&copy; 2019 <a href="https://gravitto.tk/">GravittoGroup</a> /
-				MCPlayNetwork Team</p>
-		</div>
-	</footer>
-	<script>
-		var scrollpos = window.scrollY; var header = document.getElementById("header"); var navcontent = document.getElementById("nav-content"); var navaction = document.getElementById("navAction"); var brandname = document.getElementById("brandname"); var toToggle = document.querySelectorAll(".toggleColour"); document.addEventListener("scroll", function () { scrollpos = window.scrollY; if (scrollpos > 10) { header.classList.add("bg-white"); navaction.classList.remove("bg-white"); navaction.classList.add("gradient"); navaction.classList.remove("text-gray-800"); navaction.classList.add("text-white"); for (var a = 0; a < toToggle.length; a++) { toToggle[a].classList.add("text-gray-800"); toToggle[a].classList.remove("text-white") } header.classList.add("shadow"); navcontent.classList.remove("bg-gray-100"); navcontent.classList.add("bg-white") } else { header.classList.remove("bg-white"); navaction.classList.remove("gradient"); navaction.classList.add("bg-white"); navaction.classList.remove("text-white"); navaction.classList.add("text-gray-800"); for (var a = 0; a < toToggle.length; a++) { toToggle[a].classList.add("text-white"); toToggle[a].classList.remove("text-gray-800") } header.classList.remove("shadow"); navcontent.classList.remove("bg-white"); navcontent.classList.add("bg-gray-100") } });
-	</script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-sine',
+      disable: 'mobile',
+    });
+  </script>
+  <script>
+    $(".button-collapse").sideNav();
+  </script>
 </body>
 
 </html>
