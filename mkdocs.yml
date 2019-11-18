@@ -32,6 +32,6 @@ nav:
     - パッチノート:
         - パッチノートについて: patch/index.md
         - Minecraft:
-          - 8.3.xパッチノート: patch/Minecraft/8.3.x.md
+          - 8.xパッチノート: patch/Minecraft/8.x.md
         - Discord:
           - パッチノート: patch/Discord/index.md
