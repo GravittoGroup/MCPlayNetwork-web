@@ -29,8 +29,6 @@ nav:
         - ワールド: server/Survival/world.md
         - 追加要素:
           - mcMMO: server/Survival/Extension/mcMMO.md
-      - クリエイティブ:
-        - 仕様: server/Creative/index.md
     - パッチノート:
         - パッチノートについて: patch/index.md
         - Minecraft:
