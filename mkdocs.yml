@@ -2,8 +2,8 @@ site_name: MCPlayDocs
 site_description: 'MCPlayに属するプロジェクトのドキュメント'
 site_author: 'GravittoGroup, MCPlay Team'
 site_url: 'https://wiki.mcplay.biz/'
-repo_name: 'gravitto/MCPlayDocs'
-repo_url: 'https://github.com/gravitto/MCPlayDocs'
+repo_name: 'gravitto/MCPlay/Docs'
+repo_url: 'https://gitlab.com/gravitto/mcplay/Docs'
 theme:
   name: 'material'
   language: 'ja'
