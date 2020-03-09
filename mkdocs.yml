@@ -20,18 +20,8 @@ markdown_extensions:
     - admonition
 nav:
     - ホーム: index.md
-    - サーバー:
-      - 概要: server/index.md
-      - ハブ:
-        - 仕様: server/Hub/index.md
-      - サバイバル:
-        - 仕様: server/Survival/index.md
-        - ワールド: server/Survival/world.md
-        - 追加要素:
-          - mcMMO: server/Survival/Extension/mcMMO.md
-    - パッチノート:
-        - パッチノートについて: patch/index.md
-        - Minecraft:
-          - 8.xパッチノート: patch/Minecraft/8.x.md
-        - Discord:
-          - パッチノート: patch/Discord/index.md
+    - サバイバル:
+      - 仕様: server/Survival/index.md
+      - ワールド: server/Survival/world.md
+      - 追加要素:
+        - mcMMO: server/Survival/Extension/mcMMO.md
