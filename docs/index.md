@@ -7,7 +7,7 @@
 MCPlayNetworkではサバイバル色の強いマルチサーバーを運営しています。制限が少なくMinecraftで可能な事であれば基本許されているのが特徴です。
 
 # サーバー情報
-- mcplay.biz():25565)
+- mcplay.biz(:25565)
 - Minecraft:Java Editon
 - バージョン 1.8.x - 1.15.x
 - サーバー所在地 日本
