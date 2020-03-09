@@ -21,7 +21,7 @@ markdown_extensions:
 nav:
     - ホーム: index.md
     - サバイバル:
-      - 仕様: server/Survival/index.md
-      - ワールド: server/Survival/world.md
+      - 仕様: Survival/index.md
+      - ワールド: Survival/world.md
       - 追加要素:
-        - mcMMO: server/Survival/Extension/mcMMO.md
+        - mcMMO: Survival/Extension/mcMMO.md
