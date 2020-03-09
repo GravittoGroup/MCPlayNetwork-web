@@ -16,6 +16,11 @@ theme:
 extra:
   search:
     language: 'ja'
+  social:
+    - type: 'github'
+      link: 'https://github.com/mcplay'
+    - type: 'twitter'
+      link: 'https://twitter.com/MCPlayNetwork'
 markdown_extensions:
     - admonition
 nav:
