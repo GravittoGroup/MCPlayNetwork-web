@@ -24,9 +24,5 @@ extra:
 markdown_extensions:
     - admonition
 nav:
-  - General: index.md
-  - Survival:
-    - About: Survival/index.md
-    - ワールド: Survival/world.md
-    - 追加要素:
-      - mcMMO: Survival/Extension/mcMMO.md
+  - ホーム: index.md
+  - サバイバル: Survival/index.md
