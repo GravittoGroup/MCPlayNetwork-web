@@ -1,5 +1,5 @@
-site_name: MCPlayWiki
-site_description: 'MCPlayに属するプロジェクトのドキュメント'
+site_name: MCPlayHelp
+site_description: 'MCPlay Help website'
 site_author: 'GravittoGroup, MCPlay Team'
 site_url: 'https://wiki.mcplay.biz/'
 repo_name: 'mcplay/wiki'
@@ -12,7 +12,7 @@ theme:
     primary: 'Blue Grey'
     accent: 'Blue Grey'
   feature:
-    tabs: true
+    tabs: false
 extra:
   search:
     language: 'ja'
@@ -24,9 +24,9 @@ extra:
 markdown_extensions:
     - admonition
 nav:
-    - ホーム: index.md
-    - サバイバル:
-      - 仕様: Survival/index.md
-      - ワールド: Survival/world.md
-      - 追加要素:
-        - mcMMO: Survival/Extension/mcMMO.md
+  - General: index.md
+  - Survival:
+    - About: Survival/index.md
+    - ワールド: Survival/world.md
+    - 追加要素:
+      - mcMMO: Survival/Extension/mcMMO.md
