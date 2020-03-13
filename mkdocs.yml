@@ -25,4 +25,6 @@ markdown_extensions:
     - admonition
 nav:
   - ホーム: index.md
-  - サバイバル: Survival/index.md
+  - サバイバル: survival.md
+    - GriefPrevention: GriefPrevention.md
+    - mcMMO: mcMMO.md
