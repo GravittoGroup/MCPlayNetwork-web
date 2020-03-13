@@ -27,5 +27,7 @@ nav:
   - ホーム: index.md
   - サバイバル:
     - サバイバルについて: Survival/index.md
+    - ワールド: Survival/worlds.md
+    - MyPet: Survival/MyPet.md
     - GriefPrevention: Survival/GriefPrevention.md
     - mcMMO: Survival/mcMMO.md
