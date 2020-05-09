@@ -6,9 +6,9 @@ repo_name: 'mcplay/wiki'
 repo_url: 'https://github.com/mcplay/wiki'
 
 theme:
-  name: 'material'
-  language: 'ja'
-  custom_dir: 'custom'
+  name: material
+  language: ja
+  custom_dir: custom
   palette:
     primary: 'Blue Grey'
     accent: 'Blue Grey'
