@@ -10,8 +10,8 @@ theme:
   language: ja
   custom_dir: custom
   palette:
-    primary: 'Blue Grey'
-    accent: 'Blue Grey'
+    primary: teal
+    accent: teal
   feature:
     - tabs
   icon:
