@@ -12,7 +12,7 @@ theme:
   palette:
     primary: teal
     accent: teal
-  feature:
+  features:
     - tabs
   icon:
     logo: material/library
