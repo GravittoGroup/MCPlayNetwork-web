@@ -27,9 +27,9 @@ plugins:
 
 extra:
   social:
-    - type: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github-alt
       link: https://github.com/mcplay
-    - type: fontawesome/brands/twitter
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/MCPlayNetwork
 
 markdown_extensions:
