@@ -1,9 +1,10 @@
 site_name: MCPlayHelp
-site_description: 'MCPlay Help website'
+site_description: 'MCPlay Wiki'
 site_author: 'GravittoGroup, MCPlay Team'
 site_url: 'https://wiki.mcplay.biz/'
 repo_name: 'mcplay/wiki'
 repo_url: 'https://github.com/mcplay/wiki'
+
 theme:
   name: 'material'
   language: 'ja'
@@ -12,17 +13,28 @@ theme:
     primary: 'Blue Grey'
     accent: 'Blue Grey'
   feature:
-    tabs: true
+    - tabs
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/git-alt
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+        - ja
+
 extra:
-  search:
-    language: 'ja'
   social:
-    - type: 'github'
-      link: 'https://github.com/mcplay'
-    - type: 'twitter'
-      link: 'https://twitter.com/MCPlayNetwork'
+    - type: fontawesome/brands/github-alt
+      link: https://github.com/mcplay
+    - type: fontawesome/brands/twitter
+      link: https://twitter.com/MCPlayNetwork
+
 markdown_extensions:
     - admonition
+
 nav:
   - ホーム: index.md
   - サバイバル:
