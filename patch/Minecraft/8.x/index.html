@@ -1,0 +1,2212 @@
+
+
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="MCPlay Wiki">
+      
+      
+        <link rel="canonical" href="https://wiki.mcplay.biz/patch/Minecraft/8.x/">
+      
+      
+        <meta name="author" content="GravittoGroup, MCPlay Team">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.0">
+    
+    
+      
+        <title>8.x パッチノート - MCPlay Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.89dc9fe3.min.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecd4686e.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    <body dir="" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#8x" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="">
+    <a href="https://wiki.mcplay.biz/" title="MCPlay Wiki" class="md-header-nav__button md-logo" aria-label="MCPlay Wiki">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            MCPlay Wiki
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              8.x パッチノート
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索キーワードを入力してください
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/mcplay/wiki/" title="リポジトリへ" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcplay/wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+<nav class="md-tabs" aria-label="" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link md-tabs__link--active">
+        ホーム
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Survival/" class="md-tabs__link">
+          サバイバル
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://wiki.mcplay.biz/" title="MCPlay Wiki" class="md-nav__button md-logo" aria-label="MCPlay Wiki">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
+
+    </a>
+    MCPlay Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/mcplay/wiki/" title="リポジトリへ" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mcplay/wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="ホーム" class="md-nav__link">
+      ホーム
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      サバイバル
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="サバイバル" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        サバイバル
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Survival/" title="サバイバルについて" class="md-nav__link">
+      サバイバルについて
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Survival/worlds/" title="ワールド" class="md-nav__link">
+      ワールド
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Survival/MyPet/" title="MyPet" class="md-nav__link">
+      MyPet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Survival/GriefPrevention/" title="GriefPrevention" class="md-nav__link">
+      GriefPrevention
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Survival/mcMMO/" title="mcMMO" class="md-nav__link">
+      mcMMO
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#820191211" class="md-nav__link">
+    8.20191211
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191210" class="md-nav__link">
+    8.20191210
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191125" class="md-nav__link">
+    8.20191125
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191117" class="md-nav__link">
+    8.20191117
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191115" class="md-nav__link">
+    8.20191115
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191112" class="md-nav__link">
+    8.20191112
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191111" class="md-nav__link">
+    8.20191111
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191108" class="md-nav__link">
+    8.20191108
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191104" class="md-nav__link">
+    8.20191104
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191028" class="md-nav__link">
+    8.20191028
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191019" class="md-nav__link">
+    8.20191019
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191013" class="md-nav__link">
+    8.20191013
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191005" class="md-nav__link">
+    8.20191005
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820191002" class="md-nav__link">
+    8.20191002
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190930" class="md-nav__link">
+    8.20190930
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190923" class="md-nav__link">
+    8.20190923
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190922" class="md-nav__link">
+    8.20190922
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190921" class="md-nav__link">
+    8.20190921
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190920" class="md-nav__link">
+    8.20190920
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190918" class="md-nav__link">
+    8.20190918
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190731" class="md-nav__link">
+    8.20190731
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190708" class="md-nav__link">
+    8.20190708
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190707" class="md-nav__link">
+    8.20190707
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190706" class="md-nav__link">
+    8.20190706
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190625" class="md-nav__link">
+    8.20190625
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190623" class="md-nav__link">
+    8.20190623
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190618" class="md-nav__link">
+    8.20190618
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190618_1" class="md-nav__link">
+    8.20190618
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190614" class="md-nav__link">
+    8.20190614
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190611" class="md-nav__link">
+    8.20190611
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190610" class="md-nav__link">
+    8.20190610
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190607" class="md-nav__link">
+    8.20190607
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190602" class="md-nav__link">
+    8.20190602
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190529" class="md-nav__link">
+    8.20190529
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190528" class="md-nav__link">
+    8.20190528
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190527" class="md-nav__link">
+    8.20190527
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190525" class="md-nav__link">
+    8.20190525
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190522" class="md-nav__link">
+    8.20190522
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190519" class="md-nav__link">
+    8.20190519
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190517" class="md-nav__link">
+    8.20190517
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190515" class="md-nav__link">
+    8.20190515
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190513" class="md-nav__link">
+    8.20190513
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190511" class="md-nav__link">
+    8.20190511
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190508" class="md-nav__link">
+    8.20190508
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190506" class="md-nav__link">
+    8.20190506
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190504" class="md-nav__link">
+    8.20190504
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190501" class="md-nav__link">
+    8.20190501
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190430" class="md-nav__link">
+    8.20190430
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190428" class="md-nav__link">
+    8.20190428
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190427" class="md-nav__link">
+    8.20190427
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190419" class="md-nav__link">
+    8.20190419
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190417" class="md-nav__link">
+    8.20190417
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190416" class="md-nav__link">
+    8.20190416
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190414" class="md-nav__link">
+    8.20190414
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190412" class="md-nav__link">
+    8.20190412
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190410" class="md-nav__link">
+    8.20190410
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190408" class="md-nav__link">
+    8.20190408
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190406" class="md-nav__link">
+    8.20190406
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190405" class="md-nav__link">
+    8.20190405
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190404" class="md-nav__link">
+    8.20190404
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190403" class="md-nav__link">
+    8.20190403
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190402" class="md-nav__link">
+    8.20190402
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190331" class="md-nav__link">
+    8.20190331
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190330" class="md-nav__link">
+    8.20190330
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190329" class="md-nav__link">
+    8.20190329
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190327" class="md-nav__link">
+    8.20190327
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190326" class="md-nav__link">
+    8.20190326
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190325" class="md-nav__link">
+    8.20190325
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190321" class="md-nav__link">
+    8.20190321
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190319" class="md-nav__link">
+    8.20190319
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190318" class="md-nav__link">
+    8.20190318
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190317" class="md-nav__link">
+    8.20190317
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190315" class="md-nav__link">
+    8.20190315
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190313" class="md-nav__link">
+    8.20190313
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190312" class="md-nav__link">
+    8.20190312
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190310" class="md-nav__link">
+    8.20190310
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190309" class="md-nav__link">
+    8.20190309
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190306" class="md-nav__link">
+    8.20190306
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190304" class="md-nav__link">
+    8.20190304
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190303" class="md-nav__link">
+    8.20190303
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190301" class="md-nav__link">
+    8.20190301
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190228" class="md-nav__link">
+    8.20190228
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190225" class="md-nav__link">
+    8.20190225
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190224" class="md-nav__link">
+    8.20190224
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190223" class="md-nav__link">
+    8.20190223
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190222" class="md-nav__link">
+    8.20190222
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#820190221" class="md-nav__link">
+    8.20190221
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/mcplay/wiki/edit/master/docs/patch/Minecraft/8.x.md" title="編集" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="8x">8.x パッチノート</h1>
+<h2 id="820191211">8.20191211</h2>
+<ul>
+<li>プロキシ<ul>
+<li>Minecraft: JavaEdition 1.15のサポートを追加しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191210">8.20191210</h2>
+<ul>
+<li>プロキシ<ul>
+<li>ランダムにプレイヤーが切断される問題を修正しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191125">8.20191125</h2>
+<ul>
+<li>サバイバル<ul>
+<li>メニューのリニューアルを行いました。</li>
+<li>経済のリセットを行いました。</li>
+<li>特定の行動によって一定確率でゲーム内通貨を入手できるようになりました。</li>
+<li>ホームメニューで特定のホームが見えない問題を修正しました。</li>
+<li>ショップ機能が復活しました。</li>
+<li>mcMMOのスキルレベルがリセットされました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191117">8.20191117</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ランダムテレポート機能を追加しました。（/rtp）</li>
+<li>一部ワールドの難易度がEASYになっている問題を修正しました。</li>
+<li>各種ワールドでのネザーポータル設置を無効化しました。</li>
+<li>資源ワールドで寝れないようにしました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191115">8.20191115</h2>
+<ul>
+<li>サバイバル<ul>
+<li>類似チャットSPAM防止機能を無効化しました。</li>
+<li>設定の最適化を行いました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191112">8.20191112</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ショップを一時的に無効化しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191111">8.20191111</h2>
+<ul>
+<li>プロキシ<ul>
+<li>1.14.3以前のバージョンで接続した際の互換性を改善しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191108">8.20191108</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ホーム関連にかかるゲーム内通貨を一時的に無効にしました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191104">8.20191104</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ワールド間移動の際の不具合を修正しました。</li>
+<li>デスチェストにてレポートできない不具合を修正しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191028">8.20191028</h2>
+<ul>
+<li>プロキシ<ul>
+<li>エラーメッセージのURLをcommunity.mcplay.bizからforum.mcplay.bizに修正しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>ショップのアイテム表示を無効にしました。</li>
+<li>Mobのスタックを無効にしました。</li>
+<li>エンチャントを追加しました。</li>
+<li>アンチチートを更新しました。</li>
+<li>定期的に落ちているアイテムなど一部エンティティが削除されるようになりました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191019">8.20191019</h2>
+<ul>
+<li>サバイバル<ul>
+<li>mcMMOを更新しました。</li>
+<li>ピレジャーのスポーン数を制限しました。</li>
+<li>ファントムのスポーン条件を変更しました。</li>
+<li>Mobのスタックが早くなりました。</li>
+<li>アイテムが破壊者の元でドロップするようになりました。</li>
+<li>アイテムのピックアップ速度が上がりました。</li>
+<li>ビルドワールドでスケルトンホースがスポーンしなくなりました。</li>
+<li>ビルドワールドでTNT着火が有効になりました。</li>
+<li>ビルドワールドでTNTダメージを受けるようになりました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191013">8.20191013</h2>
+<ul>
+<li>
+<p>Minecraft: JavaEdition 1.8.xから1.12.xのサポートを追加しました。</p>
+</li>
+<li>
+<p>ハブ</p>
+<ul>
+<li>バックエンドのMinecraftバージョンを1.14.4に変更しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>バックエンドのMinecraftバージョンを1.14.4に変更しました。</li>
+<li>寝ているプレイヤーの人数により夜が加速するようになりました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820191005">8.20191005</h2>
+<ul>
+<li>ハブ<ul>
+<li>マップを更新しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>エリートモブを削除しました。<ol>
+<li>エリートモブの削除に伴い、エリートモブから取得したアイテムの特殊効果は無効になります。</li>
+</ol>
+</li>
+<li>/s コマンドが使えない問題を修正しました。</li>
+<li>/es コマンドを削除しました。</li>
+<li>/ecs コマンドを削除しました。</li>
+<li>/tfly コマンドを削除しました。</li>
+<li>mcMMOを更新しました。</li>
+<li>Mobのスポーン制限を緩和しました。*</li>
+<li>負荷軽減に関する制限を緩和しました。*</li>
+</ul>
+</li>
+</ul>
+<p>*一時的なパッチです。</p>
+<h2 id="820191002">8.20191002</h2>
+<ul>
+<li>プロキシ<ul>
+<li><code>/{サーバー名}</code>でサーバーを移動するコマンドを実装しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>全てのワールドのワールドボーダーを0,0に変更しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190930">8.20190930</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ショップの保護を無視できる場合がある問題を修正しました。</li>
+<li>ラージチェストのショップに関する保護問題を修正しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190923">8.20190923</h2>
+<ul>
+<li>サバイバル<ul>
+<li>資源ワールドへ移動できない問題を修正しました。</li>
+<li>デスチェストの時間が60秒であった問題を修正しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190922">8.20190922</h2>
+<ul>
+<li>サバイバル<ul>
+<li>資源ワールドへの移動がランダムテレポートではなくなりました。</li>
+<li>ランダムテレポートを削除しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190921">8.20190921</h2>
+<ul>
+<li>プロキシ<ul>
+<li>接続が不安定である問題を修正しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>保護に関する翻訳を更新しました。</li>
+<li>特定の文字列を送信する際にエラーが発生する問題を修正しました。</li>
+<li>岩盤の破壊を無効にしました。</li>
+<li>ミステリーボックスを削除しました。</li>
+<li>投票ボーナスを削除しました。</li>
+<li>釣りコンテストを削除しました。</li>
+</ul>
+</li>
+</ul>
+<p>*既知の不具合として一部GUIが開けないコマンドが使えないという問題を確認しています。</p>
+<h2 id="820190920">8.20190920</h2>
+<ul>
+<li>サバイバル<ul>
+<li>スーパーモブを削除しました。</li>
+<li>スタックモブを追加しました。</li>
+<li>ショップのアイテム表示を有効にしました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190918">8.20190918</h2>
+<ul>
+<li>共通<ul>
+<li>ネットワークへの接続速度が向上しました。</li>
+<li>翻訳を更新しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>mcMMOのバージョンを更新しました。</li>
+<li>サーバーのラグ軽減を行いました。</li>
+<li>再起動が正常に行われないことがある問題を修正しました。</li>
+<li>再起動時間が変更されました。</li>
+<li>多くのメッセージを更新しました。</li>
+<li>デスチェストに関する問題を修正しました。</li>
+<li>アンチチートを更新しました。</li>
+<li>その他多くの不具合や更新を行いました。</li>
+</ul>
+</li>
+<li>クリエイティブ<ul>
+<li>WorldEditの使用権限を共通にしました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190731">8.20190731</h2>
+<ul>
+<li>ビレッジディフェンス<ul>
+<li>長期メンテナンスのため閉鎖</li>
+</ul>
+</li>
+<li>ミサイルウォーズ<ul>
+<li>長期メンテナンスのため閉鎖</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190708">8.20190708</h2>
+<ul>
+<li>共通<ul>
+<li>プレイヤー接続時にチャンネルへの参加メッセージが表示されないようにしました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>mcMMOスキルのレベルキャップを2000レベルに引き上げました。</li>
+<li>保護を削除した場合の還元率が0.8になりました。</li>
+<li>保護範囲を作成時に保護されるデフォルトの地下の深さが5ブロックから256ブロックに変更されました。</li>
+<li>ホームワールドで建築をする場合保護が必須になりました。</li>
+<li>ショップから無制限にアイテムを取得できる問題を修正しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190707">8.20190707</h2>
+<ul>
+<li>共通<ul>
+<li>タブリストに全サーバーのユーザーが表示されるようになりました。</li>
+<li>タブリストで今いるサーバーのプレイヤーを白、他のサーバーのプレイヤーを灰色で表示するようになりました。</li>
+<li>同一サーバー上のプレイヤーについて入退出メッセージが表示されない問題を修正しました。（#87）</li>
+<li>各サーバーへの入退出メッセージが表示されないようになりました。</li>
+<li>プレイヤーのサーバー切り替えメッセージが表示されなくなりました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>ショップのアイテムが複数個出現する問題を修正しました。</li>
+<li>ショップで表示されるアイテムがなくなりました。</li>
+<li>コマンドignore {プレイヤー名}が追加されました。</li>
+<li>mcMMOを更新しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190706">8.20190706</h2>
+<ul>
+<li>共通<ul>
+<li>チャンネルチャットを追加（#81）</li>
+<li>グローバルチャットを追加（#82）</li>
+<li>1.14クライアントで接続した際に作業台の翻訳が適応されない問題の修正（#29）</li>
+<li>特殊文字を使用するとkickされる問題を修正</li>
+<li>nonASCIIで始まるチャット及びコマンドがスパムになっていた問題を修正</li>
+<li>必要以上の参加退出ログが流れていた問題を修正</li>
+<li>プライベートメッセージ送信が実績解除と同時に行われると、実績解除メッセージが複数回流れる問題を修正</li>
+<li>チャット欄のプレイヤー名をクリックすることでプライベートメッセージが送信できるようになりました。</li>
+<li>プライベートメッセージをクリックすることで返信ができるようになりました。</li>
+<li>過去30日以内に処罰を受けたプレイヤーに黒色の「*」がつくようになりました。</li>
+<li>チャットの書き込まれた時間が分かるようになりました。</li>
+<li>いくつかの種類のチャットにホバーメッセージが追加され、情報が参照できるようになりました。</li>
+<li>サーバー間チャットを実装</li>
+<li>サーバー間のプライベートメッセージを実装</li>
+<li>プレイヤーの名前の一致率が高い人へプライベートメッセージを送信できるように変更</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>資源ワールド     - ネザーにアクセスできない問題を修正（#78）</li>
+<li>資源ワールド     - ジ・エンドにアクセスできない問題を修正（#78）</li>
+<li>雪が積もっているとエレベータを使えない問題を修正（#76）</li>
+<li>翻訳を大幅に更新（#52）</li>
+<li>mcMMOをアップデート</li>
+<li>エンダードラゴンが正常にスポーンしない問題を修正（85）</li>
+<li>資源ワールド     - オーバーワールドで保護が有効になっていた問題を修正</li>
+<li>ホームワールドを除くワールドでTNTが有効になりました。</li>
+<li>ホームワールドを除くワールドでTNTによるブロックダメージが有効になりました。</li>
+<li>ホームワールドでTNTの着火が無効になりました。</li>
+<li>ホームワールドを除くワールドでクリーパーによるブロックダメージが有効になりました。</li>
+<li>ホームワールドを除くワールドでウィザーの攻撃によるブロックダメージが有効になりました。</li>
+<li>ホームワールドを除くワールドでエンダードラゴンによるブロックダメージが有効になりました。</li>
+<li>ホームワールドを除くワールドでエンダーマンがブロックを持ち去るようになりました。</li>
+<li>ホームワールドを除くワールドでスノーマンが雪を生成するようになりました。</li>
+<li>mcMMOがモンスターを召喚していないのにモンスターを繁殖できないと警告する問題が修正されました。</li>
+<li>mcMMOの素手スキルがサーバー内全てのユーザーに同じクールダウンを使用していた問題が修正されました。</li>
+<li>mcMMOの調教スキルであるCOTWの召喚制限がプレイヤー単位ではなかった問題が修正されました。</li>
+<li>mcMMOの調教スキルであるCOTWに関する仕様が変更されました。</li>
+<li>mcMMOの木こりスキルのアビリティを二人以上が使用していると使えない場合がある問題が修正されました。 </li>
+<li>エリートモブショップで任意のアイテムを購入できていた問題を修正</li>
+<li>他人のショップを破壊できていた問題を修正</li>
+<li>mcMMOのレベル計算式が間違っていた問題を修正 &lt;-レベルは再計算済みです。</li>
+</ul>
+</li>
+</ul>
+<p>*その他多数の不具合修正及び、安定性向上</p>
+<h2 id="820190625">8.20190625</h2>
+<ul>
+<li>共通<ul>
+<li>Minecraft 1.14.3対応</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190623">8.20190623</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ラージチェストでショップを作成した際の様々な問題が修正されました。</li>
+<li>接続に関する問題を修正しました。</li>
+<li>タブ補完機能を有効にしました。</li>
+<li>チャットに関する</li>
+</ul>
+</li>
+<li>クリエイティブ<ul>
+<li>接続に関する問題を修正しました。</li>
+<li>タブ補完機能を有効にしました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190618">8.20190618</h2>
+<ul>
+<li>ハブ<ul>
+<li>入退出メッセージが表示されていた問題を修正しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>AFK中にプレイヤーがダメージを受けないようにしました。</li>
+<li>AFK中にプレイヤーが移動しないようにしました。</li>
+<li>デスチェストのホログラフィックが消えない場合がある問題を修正しました。（#75）</li>
+<li>ショップデータの保管先を変更しました。それに伴いデータが削除されています。お手数をおかけしますが、再度ショップの作成をお願い致します。</li>
+</ul>
+</li>
+<li>ミサイルウォーズ<ul>
+<li>待機マップを更新しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190618_1">8.20190618</h2>
+<ul>
+<li>ハブ<ul>
+<li>入退出メッセージが表示されていた問題を修正しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>AFK中にプレイヤーがダメージを受けないようにしました。</li>
+<li>AFK中にプレイヤーが移動しないようにしました。</li>
+<li>デスチェストのホログラフィックが消えない場合がある問題を修正しました。（#75）</li>
+<li>ショップデータの保管先を変更しました。それに伴いデータが削除されています。お手数をおかけしますが、再度ショップの作成をお願い致します。</li>
+</ul>
+</li>
+<li>ミサイルウォーズ<ul>
+<li>待機マップを更新しました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190614">8.20190614</h2>
+<ul>
+<li>共通<ul>
+<li>1.8.x    -1.12.xのサポートを修正しました。</li>
+<li>アンチチートの更新を行いました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>一部翻訳を修正しました。</li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>待機マップを更新しました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190611">8.20190611</h2>
+<ul>
+<li>ビレッジディフェンス<ul>
+<li>ゲームから退出後、ポータルの上にテレポートされる問題を修正しました。（#72）</li>
+<li>マップ内で奈落へ落下すると死亡しない問題を修正しました。（#65） </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190610">8.20190610</h2>
+<ul>
+<li>ハブ<ul>
+<li>マップを変更しました。</li>
+<li>NPCのネームタグを変更しました。</li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>Lobbyマップを変更しました。</li>
+<li>ゲーム参加方法を変更しました。<ul>
+<li>戻るポータルを追加しました。</li>
+</ul>
+</li>
+<li>アンチチートを更新しました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190607">8.20190607</h2>
+<ul>
+<li>ハブ<ul>
+<li>一部機能を削除しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>バックパックが使えない問題を修正（#61）</li>
+<li>一部誤訳を修正しました。 </li>
+</ul>
+</li>
+<li>ミサイルウォーズ<ul>
+<li>新ゲームモード「MissileWars」のベータを公開しました。</li>
+</ul>
+</li>
+</ul>
+<p>*その他、多数の変更</p>
+<h2 id="820190602">8.20190602</h2>
+<ul>
+<li>サバイバル<ul>
+<li>mcMMOスキルが一定レベルに達するまではブーストが付与されるようになりました。</li>
+<li>資源ワールドに移動できない不具合を修正しました。（#57）</li>
+<li>資源ワールドに移動時、資源ワールドのランダムな地点にテレポートされるようになりました。 </li>
+</ul>
+</li>
+<li>クリエイティブ<ul>
+<li>ホログラム内容を変更しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190529">8.20190529</h2>
+<ul>
+<li>サバイバル<ul>
+<li>8.2019年5月27日にロールバックした岩盤破壊の機能を修正した上で再度実装しました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190528">8.20190528</h2>
+<ul>
+<li>共通<ul>
+<li>Minecraft 1.14.2対応</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>保護の自動削除に関するルールを変更しました。</li>
+<li>フライ購入金額を変更しました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190527">8.20190527</h2>
+<ul>
+<li>共通<ul>
+<li>Minecraft 1.14.2対応を行いました。（#55）</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>5月25日のY5以下の岩盤をシルクタッチ１以上付きの金のピッケルで破壊できるようになったアップデートに問題があったためロールバックしました。（#30）</li>
+<li>ゲーム内通過に関する表記を一部変更しました。</li>
+<li>ログイン時間ボーナスを削除しました。 </li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>マップを改善しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190525">8.20190525</h2>
+<ul>
+<li>共通<ul>
+<li>全サーバーの最適化を行いました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>炎が消えない問題を修正しました。</li>
+<li>ショップを一部削除しました。</li>
+<li>プレイヤーテレポート機能を実装しました。tpa [プレイヤー名]でリクエストを送信し、tpacceptが入力されるとテレポートされます。（#50）</li>
+<li>Y5以下の岩盤をシルクタッチ１以上付きの金のピッケルで破壊できるようになりました。（#30） </li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>異常な負荷を与えていた問題を修正しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190522">8.20190522</h2>
+<ul>
+<li>共通<ul>
+<li>自動再起動時間が24:00になりました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>ジ・エンドが削除されました。今後は資源ワールド     - ジ・エンドをご利用下さい。</li>
+<li>MOBのスポーン率が変更されました。</li>
+<li>mcMMOのアーマーインパクトがランクによって変わらない問題を修正しました。</li>
+<li>mcMMOのアーマーインパクトのダメージ耐久があがりました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190519">8.20190519</h2>
+<ul>
+<li>サバイバル<ul>
+<li>接続可能バージョンが1.1x、1.14.xのみになりました。</li>
+<li>ネザーゲートからゾンビピッグマンが出現しないようになりました。 </li>
+</ul>
+</li>
+<li>クリエイティブ<ul>
+<li>接続可能バージョンが1.1x、1.14.xのみになりました。</li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>接続可能バージョンが1.1x、1.14.xのみになりました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190517">8.20190517</h2>
+<ul>
+<li>ハブ<ul>
+<li>バックエンドをMinecraft 1.12に更新しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>自動再起動を4:00のみに変更しました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190515">8.20190515</h2>
+<ul>
+<li>プロキシ<ul>
+<li>AntiBotにアクセスが弾かれると接続できなくなる問題を修正しました。</li>
+</ul>
+</li>
+<li>ハブ<ul>
+<li>接続サーバー選択からVillageDefenseに接続できなかった問題を修正しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>奈落ダメージを受けない問題を修正しました。</li>
+<li>スポーン地点でデスチェストが生成されないようになりました。</li>
+<li>死亡した場所がマグマの場合、ガラスに囲まれなくなりました。</li>
+<li>AntiCheatが原因で戦闘中にkickされる問題を修正しました。</li>
+<li>各ワールドの境界線を視覚化しました。</li>
+</ul>
+</li>
+<li>クリエイティブ<ul>
+<li>バックエンドをMinecraft 1.12に更新しました。</li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>バックエンドをMinecraft 1.12に更新しました。</li>
+<li>プレイヤーのステータスが保存されない問題を修正しました。（#48）</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190513">8.20190513</h2>
+<ul>
+<li>共通<ul>
+<li>Minecraft 1.14.1対応</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190511">8.20190511</h2>
+<ul>
+<li>サバイバル<ul>
+<li>一部チェストがミステリーボックスに変化する問題を修正しました。（#44）</li>
+<li>死亡メッセージが全て表示されるようになりました。</li>
+<li>離脱メッセージが表示されるようになりました。</li>
+<li>デスチェストをShift回収すると防具をつけるようになりました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190508">8.20190508</h2>
+<ul>
+<li>サバイバル<ul>
+<li>コマンドrtpを追加しました。ワールド上のランダムな座標にテレポートできます。</li>
+<li>不具合の発生していたミステリーボックスを一時的に無効化しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190506">8.20190506</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ボスイベントが発生する条件を緩和しました。</li>
+<li>釣りコンテストの報酬を変更しました。</li>
+<li>新たなショップを追加しました。</li>
+<li>特定ワールドでログアウトし、再起動後に接続するとワールドの読み込みが終わらない問題を修正しました。（#40）</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190504">8.20190504</h2>
+<ul>
+<li>共通<ul>
+<li>各サーバの自動メッセージを無効にしました。</li>
+</ul>
+</li>
+<li>プロキシ<ul>
+<li>ネットワークの自動再起動が毎日23:00に行われるようになりました。</li>
+</ul>
+</li>
+<li>ハブ<ul>
+<li>村人をクリックすることでサーバへ接続できるようになりました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>デスチェストの時間が切れた場合、アイテムをその場にドロップするようにしました。</li>
+<li>資源ワールド     - ジ・エンドを追加しました。</li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>接続後すぐにゲームに参加するようになりました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190501">8.20190501</h2>
+<ul>
+<li>サバイバル<ul>
+<li>コマンド/tflyを使用することによって時間制の飛行可能権限を入手できるようになりました。</li>
+<li>テレポート待機時間を無効にしました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190430">8.20190430</h2>
+<ul>
+<li>サバイバル<ul>
+<li>チェストソートを実装しました。切り替えはコマンド/sortで可能です。</li>
+<li>インベントリソートを実装しました。コマンド/isortでソート可能です。</li>
+<li>mcMMOの翻訳情報を大幅に更新しました。（#34）</li>
+<li>でコマンド/lotを削除しました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190428">8.20190428</h2>
+<ul>
+<li>
+<p>共通</p>
+<ul>
+<li>家の中で雨が降る問題を修正しました。（#26）</li>
+<li>オートメッセージが流れるようになりました。</li>
+<li>チャットフィルタリングを更新しました。</li>
+<li>一部のバージョンのクライアントで発生していた問題を修正しました。</li>
+</ul>
+</li>
+<li>
+<p>サバイバル</p>
+<ul>
+<li>通常ワールドでファントムがスポーンしなくなりました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190427">8.20190427</h2>
+<ul>
+<li>
+<p>ハブ</p>
+<ul>
+<li>ログイン時に表示されるサブタイトルを変更しました。</li>
+</ul>
+</li>
+<li>
+<p>サバイバル</p>
+<ul>
+<li>自動AFKが無効になりました。</li>
+<li>旧ネザーワールドに移動できていた問題を修正しました。</li>
+<li>釣りコンテストの賞金を変更しました。</li>
+<li>エリートモブに関する重大な不具合を修正しました。</li>
+<li>不具合の利用が確認されたため、エリートモブの一部データをロールバックしました。</li>
+<li>mcMMOが日本語化されていない問題を修正しました。</li>
+<li>保護メニューを開けない問題を修正しました。</li>
+</ul>
+</li>
+<li>
+<p>クリエイティブ</p>
+<ul>
+<li>投票時にメッセージが表示されないようにしました。</li>
+<li>最適化を行いました。 </li>
+</ul>
+</li>
+<li>
+<p>ビレッジでフェンス</p>
+<ul>
+<li>ワールドが更新されました。</li>
+<li>一部不具合を修正しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190419">8.20190419</h2>
+<ul>
+<li>サバイバル<ul>
+<li>釣りコンテストが復活しました。</li>
+<li>mcMMOのデスペナルティが復活しました。</li>
+<li>mcMMOのレベルキャップが1000レベルに開放されました。</li>
+<li>デスチェストの時間が過ぎた場合、アイテムが消滅するようになりました。</li>
+<li>ネザー及び資源ワールド -ノーマルが削除されました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190417">8.20190417</h2>
+<ul>
+<li>サバイバル<ul>
+<li>防具立てが一定条件下で消失する不具合を修正しました。（#24）</li>
+<li>デスチェストが生成されない不具合を修正しました。（#25） </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190416">8.20190416</h2>
+<ul>
+<li>ハブ</li>
+<li>再起動時間を14:00に変更しました。</li>
+<li>サバイバル<ul>
+<li>メニューからホーム設定が開けない問題を修正しました。</li>
+<li>エリートモブを調整しました。で再起動時にデスチェストが消えなくなりました。</li>
+<li>ログイン時間ボーナスの上限が上がりました。</li>
+<li>スポーンにエリートモブに関するNPCを設置しました。</li>
+<li>スポーンにアイテムを売却できるNPCを設置しました。</li>
+<li>売却できるアイテムが増えました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190414">8.20190414</h2>
+<ul>
+<li>ハブ<ul>
+<li>再起動時間を14:00に変更しました。</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>メニューを大幅にリニューアルしました。</li>
+<li>資源ワールドを新規作成しました。</li>
+<li>コマンド/warpが追加されました。</li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>ショップにラピスラズリが追加されました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190412">8.20190412</h2>
+<ul>
+<li>サバイバル<ul>
+<li>の再起動時間を0:00、6:00、12:00、18:00に変更しました。</li>
+<li>起動スクリプトを変更しました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190410">8.20190410</h2>
+<ul>
+<li>サバイバル<ul>
+<li>召雷エンチャントを使うことによって任意の保護内のMobやプレイヤーにダメージを与えられる問題を修正しました。（#23） </li>
+<li>デスチェストから発生する花火を無効化しました。</li>
+<li>保護範囲削除時の返還率を0.7に変更しました。</li>
+<li>チェストを設置時土地保護が可能なワールドの場合、チェストを中心に半径２ブロックが自動的に保護されるようになりました。</li>
+<li>ワールドの境界線が円形から四角形に変更になりました。</li>
+<li>宝くじを無効化しました。</li>
+<li>他人に対する/getposコマンドを無効化しました。 </li>
+<li>レッドストーン回路の処理が動的処理が元に戻りました。*</li>
+</ul>
+</li>
+<li>
+<p>ビレッジディフェンス</p>
+<ul>
+<li>参加・退出メッセージが無効になりました。</li>
+<li>不具合を修正しました。</li>
+<li>ゲームへの参加方法が変更されました。</li>
+<li>プレイヤーステータスが分かりやすくなりました。</li>
+</ul>
+</li>
+<li>
+<p>一部レッドストーン回路に異常が出ています。レッドストーンもしくは周辺ブロックを更新すると回路が正常に戻ります。</p>
+</li>
+</ul>
+<h2 id="820190408">8.20190408</h2>
+<ul>
+<li>プロキシ<ul>
+<li>改善</li>
+</ul>
+</li>
+<li>ハブ<ul>
+<li>マップを更新</li>
+<li>改善</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>最低保護範囲が25ブロックになりました。</li>
+<li>発生者が明確な経験値が直接入るようになりました。</li>
+<li>レッドストーン回路の処理が動的になりました。</li>
+<li>/voteを実行した際一覧が表示されない問題を修正</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190406">8.20190406</h2>
+<ul>
+<li>サバイバル<ul>
+<li>メニューからミステリーボックスを開けるようになりました。</li>
+<li>ホームショップでホーム上限解放(4→5)とホーム上限解放(5→6)が購入可能になりました。</li>
+<li>アイテム売却時のメッセージがおかしい問題を修正</li>
+<li>AFkを復活</li>
+<li>ログイン時間ボーナスを調整</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190405">8.20190405</h2>
+<ul>
+<li>サバイバル<ul>
+<li>mcMMOの更新</li>
+<li>切断メッセージ無効化</li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>マップHollowを削除</li>
+<li>最適化 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190404">8.20190404</h2>
+<ul>
+<li>サバイバル<ul>
+<li>mcMMOの調整が行われました。</li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>GameLobbyが改善されました。</li>
+<li>GameLobbyからHubに戻れるアイテムを追加しました。</li>
+<li>特定条件下のプレイヤーがAntiCheatにKickされる問題を修正しました。</li>
+<li>/kitコマンドを追加しました。ゲーム参加中にキットを選択できます。</li>
+<li>ゲーム終了時に花火があがらなくなりました。</li>
+<li>参加時MOTDが空白で流れていた問題を修正しました。</li>
+<li>ゲーム終了時に終了メッセージがプレイヤー分流れる問題を修正しました。 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190403">8.20190403</h2>
+<ul>
+<li>プロキシ<ul>
+<li>最適化</li>
+<li>一部処理無効化 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190402">8.20190402</h2>
+<ul>
+<li>ハブ<ul>
+<li>接続サーバー選択にVillageDefenseを追加</li>
+<li>参加、離脱メッセージを無効化</li>
+<li>参加時のチャットメッセージを無効化</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>mcMMO関連からの花火の発生を無効化（#19）</li>
+<li>デスチェストから発生する花火のインターバルを15秒へ変更（#20）</li>
+</ul>
+</li>
+<li>ビレッジディフェンス<ul>
+<li>割当メモリを調整</li>
+<li>サーバー最適化 </li>
+</ul>
+</li>
+</ul>
+<h2 id="820190331">8.20190331</h2>
+<ul>
+<li>ビレッジディフェンス<ul>
+<li>VillageDefense Betaをリリース</li>
+<li>サーバーへのアクセスはコマンドで/server villagedefense をご利用下さい。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190330">8.20190330</h2>
+<ul>
+<li>サバイバル<ul>
+<li>資源ワールド ハードを削除</li>
+<li>プレイヤーに関する一部ログの強化</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190329">8.20190329</h2>
+<ul>
+<li>サバイバル<ul>
+<li>特定条件下でデスチェストが生成されない問題の修正（#18）</li>
+<li>ファントムの調整</li>
+<li>Spam防止機能の調整</li>
+<li>１時間あたりのログインで入手できる保護範囲量が1024ブロックに増えました。</li>
+<li>mcMMOの調整</li>
+<li>デスチェストが消えるとアイテムをその場にドロップするようになりました。</li>
+<li>通常ワールド（world）でアイテムをドロップするようになりました。</li>
+<li>ネザー（world_nether）で土地の保護ができるようになりました。</li>
+<li>ラグの原因となっていた機能を複数無効化</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190327">8.20190327</h2>
+<ul>
+<li>サバイバル<ul>
+<li>釣りの調整</li>
+<li>魚から長さや種類の情報が削除されました。</li>
+<li>釣りコンテストがなくなりました。</li>
+<li>魚の売却が使えなくなりました。</li>
+<li>エリートモブの調整</li>
+<li>World_the_endでのスポーン無効化</li>
+<li>スポナーからのエリートモブスポーン無効化</li>
+<li>イベント発生条件調整</li>
+<li>エレベータの調整</li>
+<li>デスチェストの地点に花火が上がるようになりました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190326">8.20190326</h2>
+<ul>
+<li>サバイバル<ul>
+<li>負荷軽減のためのロードチャンク制限</li>
+<li>負荷軽減のためのMobスポーン制限</li>
+<li>割当メモリ調整</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190325">8.20190325</h2>
+<ul>
+<li>サバイバル<ul>
+<li>エリートモブの調整</li>
+<li>エリートモブアップデートの権限が反映されていない問題を修正（#15）</li>
+<li>武器に関するデータを修正</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190321">8.20190321</h2>
+<ul>
+<li>サバイバル<ul>
+<li>AFK機能を無効</li>
+<li>mcMMOの調整</li>
+<li>サーバー最適化</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190319">8.20190319</h2>
+<ul>
+<li>サバイバル<ul>
+<li>mcMMOのパーティー経験値共有を無効化</li>
+<li>mcMMOのパーティーアイテム共有を無効化</li>
+<li>追加保護範囲の価格を変更</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190318">8.20190318</h2>
+<ul>
+<li>ハブ<ul>
+<li>自動再起動時間を20:00から8:00に変更</li>
+</ul>
+</li>
+<li>サバイバル<ul>
+<li>修繕（Mending）エンチャントの無効化</li>
+<li>村人がアイテムを拾わない問題の修正（#13）</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190317">8.20190317</h2>
+<ul>
+<li>サバイバル<ul>
+<li>mcMMOのデスペナルティを10%から3%に修正</li>
+<li>魚の販売価格を修正</li>
+<li>ファントムのダメージ量を修正</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190315">8.20190315</h2>
+<ul>
+<li>サバイバル<ul>
+<li>バックパック拡張ショップを追加</li>
+<li>メニューの修正</li>
+<li>ジエンドのワールドボーダーを半径4000ブロックに変更</li>
+<li>ジエンドのワールドボーダーを視覚化</li>
+<li>魚の価格を上方修正</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190313">8.20190313</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ホーム上限解放（1-&gt;2）が購入できない不具合を修正</li>
+<li>追加保護範囲（512ブロック）が購入できない不具合を修正</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190312">8.20190312</h2>
+<ul>
+<li>サバイバル<ul>
+<li>TNTに関する修正</li>
+<li>ワールド内でTNTを使用した場合、ブロックが破壊されるようになっていた問題を修正しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190310">8.20190310</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ユーザーが通常所持しているホーム数が3個から1個へ変更されました。</li>
+<li>メニューコマンドの追加</li>
+<li>ショップ追加</li>
+<li>ホーム数上限を開放できるようになりました。/homeshopからアクセスできます。</li>
+<li>保護範囲量を追加できるようになりました。/claimsshopからアクセスできます。</li>
+<li>低確率でダメージを与える魚が釣れるようになりました。</li>
+<li>低確率で毒Ⅱを与える魚が釣れるようになりました。</li>
+<li>初回ログイン時に入手できる保護範囲量が512ブロックになりました。</li>
+<li>一時間あたりに増える保護範囲量が512ブロックになりました。</li>
+<li>ログインで入手できる総保護範囲量が10240ブロックになりました。</li>
+<li>保護土地を削除した場合、プレイヤーに返還される保護範囲量が0.5倍になりました。</li>
+<li>宝くじの抽選時間が0:00、6:00、12:00、18:00になりました。</li>
+<li>宝くじを購入した場合、購入額の25%が上乗せされて賞金に追加されるようになりました。</li>
+<li>最低3人の参加が必要になりました。</li>
+<li>当選額から10%が引かれるようになりました。</li>
+<li>当選者がいない確率が上がりました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190309">8.20190309</h2>
+<ul>
+<li>サバイバル<ul>
+<li>バックパック（追加インベントリ）機能を追加しました。</li>
+<li>/backpack、/bpコマンドで開くことができます。</li>
+<li>アイテムを格納したまま死亡した場合、その場にアイテムをドロップします。</li>
+<li>釣りの調整</li>
+<li>ボーナスボックスの中身が変更されました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190306">8.20190306</h2>
+<ul>
+<li>サバイバル<ul>
+<li>エレベータの床をクオーツブロックから鉄ブロックに変更しました。</li>
+<li>各スキルレベルの上限を300から500に上げました。</li>
+<li>各スキルレベルの取得経験値量の調整</li>
+<li>釣りを行った際に釣った魚が結果と違う場合がある。（issue #6）の修正</li>
+<li>アンコモンの追加</li>
+<li>釣れる魚の調整</li>
+<li>オークション機能の削除を行いました。</li>
+<li>/auctionコマンドは削除されました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190304">8.20190304</h2>
+<ul>
+<li>サバイバル<ul>
+<li>ボーナスボックスから排出される特典に1000Coinを追加しました。</li>
+<li>アンチチートの更新</li>
+<li>エリートモブが資源ワールド - ノーマルにもスポーンするようになりました。</li>
+<li>資源ワールド - ノーマルの再生成</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190303">8.20190303</h2>
+<ul>
+<li>サバイバル<ul>
+<li>/backコマンドを無効にしました。</li>
+<li>World_the_end（ジ・エンド）での/sethomeコマンドを無効にしました。</li>
+<li>クォーツブロック単体のエレベータを追加しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190301">8.20190301</h2>
+<ul>
+<li>サバイバル<ul>
+<li>釣れる魚の調整を行いました。</li>
+<li>翻訳を更新しました。</li>
+<li>釣りコンテストが開催される時間が変更されました。</li>
+<li>次の時間に開催されるようになりました。07:00・09:00・12:30・14:00・16:00・19:00・21:00・23:00</li>
+<li>時間はサーバー側で設定されている時間出るため多少時間差が発生する可能性があります。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190228">8.20190228</h2>
+<ul>
+<li>サバイバル<ul>
+<li>通常ワールドでKeepInventoryが有効になりました。</li>
+<li>ネザーで土地保護が無効になりました。</li>
+<li>資源ワールドが資源ワールド - ノーマルへ、資源ワールド２が資源ワールド - ハードへ変更されました。</li>
+<li>資源ワールド - ノーマルではエリートモブが発生しなくなりました。</li>
+<li>エリートモブからのドロップ品を調整しました。</li>
+<li>経済バランス見直しのためサーバーショップの価格を変更しました。</li>
+<li>/ロト及び/lotコマンドを追加しました。（宝くじの購入）</li>
+<li>/Auctionコマンドを追加しました。（オークションページの表示）</li>
+<li>/sコマンドを追加しました。（/spawnの短縮）</li>
+<li>通常ワールドでDeathChestが生成されなくなりました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190225">8.20190225</h2>
+<ul>
+<li>サバイバル<ul>
+<li>/sethomeに100Coinが掛かるようになりました。</li>
+<li>/homeに10Coinが掛かるようになりました。</li>
+<li>ワールドの境界線が半径1500ブロックから半径3000ブロックへ変更されました。</li>
+<li>/backコマンドを追加しました。</li>
+<li>/backコマンドは死亡した際に利用できるようになり、死亡地点にテレポートすることができます。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190224">8.20190224</h2>
+<ul>
+<li>サバイバル<ul>
+<li>エリートモブからドロップするユニークアイテムを調整しました。</li>
+<li>エリートモブの強さを調整しました。</li>
+<li>複数体モンスターがいるとエリートモブになるようになりました。</li>
+<li>MCMMOプラグインのアップデートを行いました。</li>
+<li>MCMMOのスキルを調整しました。</li>
+<li>keepinventoryを削除し、死亡した際にアイテムがドロップするようになりました。</li>
+<li>アイテムは死亡場所に生成されたチェストに自動格納されます。</li>
+<li>チェストは本人以外は開けることが不可能です。</li>
+<li>チェストは死亡から５分で削除されます。</li>
+<li>消滅の呪いの付いたアイテムが消えるようになります。</li>
+<li>エレベーターの距離制限がなくなりました。</li>
+<li>マルチサーバーであるため本来全員がベッドで寝ないといけませんが、ベッドに入った時点で寝た事になります。</li>
+<li>巨大なファントムのスポーン確率を調整</li>
+<li>モブスポナーから出てくるMOBにAIが付くようになりました。</li>
+<li>モブスポナーからエリートモブが出るようになりました。</li>
+<li>資源ワールド２が開放されました。</li>
+<li>釣ることのできる魚が増えました。</li>
+<li>釣ることができる魚に大きさとレア度が追加されました。</li>
+<li>9:00, 11:30, 14:00, 18:00, 21:00に釣りコンテストが開催されるようになりました。</li>
+<li>/fish shopで魚を売ることができるようになりました。</li>
+<li>1.13.xへのアップデートに伴いチェスト保護機能を削除しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190223">8.20190223</h2>
+<ul>
+<li>サバイバル<ul>
+<li>エリートモブを追加しました。</li>
+<li>エリートモブは、プレイヤーのレベルに応じて周辺にスポーンする強化モブです。</li>
+<li>資源ワールド、ネザー、ジ・エンドでのみスポーンします。</li>
+<li>ボスモブを追加しました。</li>
+<li>ボスモブはランダムでスポーンし、スポーンした際は全体にメッセージが送信されます。</li>
+<li>資源ワールド、ネザー、ジ・エンドでのみスポーンします。</li>
+<li>MCMMOのレベルキャップが100から200へ増加しました。</li>
+<li>買取アイテムを追加しました。</li>
+<li>販売アイテムを追加しました。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190222">8.20190222</h2>
+<ul>
+<li>サバイバル<ul>
+<li>経済機能を追加しました。</li>
+<li>コマンド /bal /baltop /pay が使用可能になり、通貨を使った取引が有効になります。</li>
+<li>ショップ機能も開放され、誰でもショップを作れるようになりました。</li>
+<li>経済の追加に伴い、宝くじを追加しました。</li>
+<li>宝くじの情報は、/lottery guiから見ることができます。</li>
+<li>購入は/lottery guiもしくは/lottery buyで可能です。</li>
+<li>サーバーショップを追加しました。</li>
+<li>現時点ではアイテムの販売のみ可能です。</li>
+<li>サーバーショップへはスポーン地点から移動が可能です。</li>
+</ul>
+</li>
+</ul>
+<h2 id="820190221">8.20190221</h2>
+<ul>
+<li>サバイバル<ul>
+<li>チェスト保護機能の追加</li>
+<li>投票ボーナスの追加</li>
+<li>ホームポイントのセット数追加</li>
+<li>/sethomeで設定できる数を増加させました。</li>
+</ul>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/mcplay" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://twitter.com/MCPlayNetwork" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.36cbf620.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.00c583dd.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ["tabs", "instant"],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.7f7c8775.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
