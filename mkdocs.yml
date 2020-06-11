@@ -41,7 +41,7 @@ markdown_extensions:
 nav:
   - ホーム: index.md
   - サバイバル:
-    - サバイバルについて: Survival/index.md
+    - サバイバルについて: survival.md
     - ワールド: Survival/worlds.md
     - MyPet: Survival/MyPet.md
     - GriefPrevention: Survival/GriefPrevention.md
