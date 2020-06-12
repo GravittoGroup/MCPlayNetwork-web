@@ -37,7 +37,3 @@ extra:
 
 markdown_extensions:
     - admonition
-
-nav:
-  - ホーム: index.md
-  - サバイバル: survival.md
