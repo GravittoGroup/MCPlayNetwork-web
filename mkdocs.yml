@@ -38,3 +38,8 @@ extra:
 markdown_extensions:
   - admonition
   - codehilite
+
+nav:
+  - 'ホーム':
+    - 'ホーム': 'index.md'
+    - 'サバイバル': 'survival.md'
