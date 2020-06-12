@@ -27,6 +27,7 @@ plugins:
         - ja
   - git-revision-date-localized:
       type: iso_datetime
+  - awesome-pages
 
 extra:
   social:
