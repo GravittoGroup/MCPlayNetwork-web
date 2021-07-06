@@ -1,0 +1,41 @@
+site_name: MCPlay Wiki
+site_description: 'MCPlay Wiki'
+site_author: 'Gravitto, MCPlay Team'
+site_url: 'https://wiki.mcplay.biz/'
+repo_name: 'mcplay/wiki'
+repo_url: 'https://github.com/mcplay/wiki'
+
+theme:
+  name: material
+  language: ja
+  custom_dir: custom
+  palette:
+    primary: teal
+    accent: teal
+  features:
+    - tabs
+    - instant
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/git-alt
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+        - ja
+  - git-revision-date-localized:
+      type: iso_datetime
+  - awesome-pages
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/mcplay
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/MCPlayNetwork
+
+markdown_extensions:
+  - admonition
+  - codehilite
